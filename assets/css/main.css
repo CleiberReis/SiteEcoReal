@@ -15,7 +15,7 @@
 * {
   /*font-family: 'Roboto', sans-serif;*/
   font-family: 'Ubuntu', sans-serif;
-  font-size: 14pt;
+  font-size: 16pt;
 }
 
 /* cabeçalho da página */
@@ -88,12 +88,45 @@
   background-color: rgb(41, 42, 46);
 }
 
-/* Rodapé */
-#footer-div {
-  height: 150px;
-  width: 100%;
-  background-color: red;
+/* footer */
+#footer-box {
+  height: auto;
+  width: auto;
   display: block;
   clear: both;
   background-color: rgb(63, 88, 59);
+}
+
+#footer-div01 {
+  color: white;
+  text-align: center;
+}
+
+#footer-div01 h3 {
+  font-size: 1em;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
+}
+
+#link-footer {
+  display: block;
+  padding: 0% 0% 2% 5%;
+  width: 100px;
+  float: left;
+}
+#link-footer a {
+  text-align: left;
+  font-size: .8em;
+  text-transform: uppercase;
+}
+
+#link-footer a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+iframe {
+  border: 1px solid black;
+  overflow: hidden;
+  margin-left: 15%;
 }
