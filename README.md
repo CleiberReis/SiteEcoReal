@@ -1,7 +1,7 @@
 # SiteEcoReal
 Project develop site Eco Real Tijolos
 
-* Developers: *
+Developers:
 
 - Cleiber Reis
 - Gabriele Kiane
