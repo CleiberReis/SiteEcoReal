@@ -1,0 +1,209 @@
+/* config sections */
+#section1 {
+  height: 500px;
+  padding: 0px;
+  margin: 0px;
+}
+
+#section2 {
+  height: 500px;
+  padding: 0px;
+  margin: 0px;
+}
+
+#section3 {
+  height: 500px;
+  padding: 0px;
+  margin: 0px;
+}
+
+#text-new {
+  padding-top: 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+#text-products-home {
+  padding-top: 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+/* Parallax - image body */
+#section-parallax {
+  height: 500px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.parallax-container-1 {
+  height: 500px;
+  background: transparent;
+  padding: 0px;
+  margin: 0px;
+}
+
+#text-p-container-1 {
+  color: white;
+  top: 40%;
+  height: 100px;
+  background-color: rgba(63, 88, 59, 0.65);
+  float: center;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(142, 142, 142, 0.67);
+}
+
+#text-p-container-1 h1 {
+  font-size: 2em;
+  top: 30%;
+  height: 50px;
+  float: center;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 0 10px black;
+}
+
+/* Parallax - image body end */
+
+/* parallax-body */
+.bg-parallax {
+  background: url() 100% -0 no-repeat fixed;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  min-height: 650px;
+  margin: 0 auto;
+  width: 100%;
+  display: table;
+  vertical-align: middle;
+  position: relative;
+}
+
+.parallax-body {
+  vertical-align: middle;
+  background: rgba(0, 0, 0, 0.10);
+  text-align: center;
+  min-height: 650px;
+}
+
+#text_carousel {
+  top: 250px;
+  height: 220px;
+  background-color: rgba(63, 88, 59, 0.65);
+  float: center;
+  position: relative;
+}
+
+#text_carousel h3 {
+  font: normal 50px poppinsregular;
+  color: #FFFFFF;
+  margin: 0;
+  text-shadow: 0 0 10px black;
+  height: 105px;
+  text-align: right;
+  padding-right: 2%;
+}
+
+#text_carousel h1 {
+  font: normal 80px/61px poppinssemibold;
+  color: #FFFFFF;
+  margin: 0;
+  text-shadow: 0 0 10px black;
+  height: 105px;
+  text-align: right;
+  padding-right: 2%;
+}
+
+/* parallax-body end*/
+
+/* Products list home */
+
+ul#list-products {
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 20% 60px 20%;
+  overflow: hidden;
+  list-style: none;
+  display: block;
+  float: left;
+  border: 1px solid rgba(0, 0, 0, .5);
+  background-color: rgba(0, 2, 6, .1);
+}
+
+ul#list-products li {
+  float: left;
+  display: block;
+  width: 250px;
+  height: 250px;
+  margin: 5px;
+  text-align: left;
+  border: 1px solid black;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+}
+
+ul#list-products li span {
+  opacity: 0;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000000;
+  background-color: rgba(0, 0, 0, .4);
+  font-size: 6pt;
+  padding: 5px;
+  line-height: 420px;
+}
+
+ul#list-products li:hover {
+  -webkit-transform: scale(1.5);
+  /* -webkit-transition: .1s; */
+}
+
+ul#list-products li:hover span {
+  opacity: 1;
+}
+
+ul#list-products li#product01 {
+  background: url('../images/1.jpg') no-repeat;
+  background-position: 50% 50%;
+  background-size: 650px 459px;
+  background-color: #ffffff;
+}
+
+ul#list-products li#product01:hover {
+  background-position: 0px 0px;
+  background-size: 250px 250px;
+}
+
+ul#list-products li#product02 {
+  background: url('../images/3.jpg') no-repeat;
+  background-position: 50% 50%;
+  background-size: 720px 405px;
+  background-color: #ffffff;
+}
+
+ul#list-products li#product02:hover {
+  background-position: 0px 0px;
+  background-size: 250px 250px;
+}
+
+ul#list-products li#product03 {
+  background: url('../images/2.jpg') no-repeat;
+  background-position: 30% 30%;
+  background-size: 400px 300px;
+  background-color: #ffffff;
+}
+
+ul#list-products li#product03:hover {
+  background-position: 0px 0px;
+  background-size: 250px 250px;
+}
+
+#box-products {
+  width: 100%;
+  height: 100%;
+}
+
+/* Products list home end */

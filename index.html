@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Eco Real Tijolos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="imagem/png" href="assets/images/logo_icon_teste.png">
+
+  <link rel="stylesheet" href="assets/css/index.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/media.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/produtos.css" type="text/css">
+
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" id="bootstrap-css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="assets/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+  <script src="assets/js/tether.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      var header = $('.main_banner');
+
+      var backgrounds = new Array(
+        'url(https://ecorealtijolos.com.br/_img/background2.jpg)',
+        'url(https://ecorealtijolos.com.br/_img/1.jpg)',
+      );
+
+      var current = 0;
+
+      function nextBackground() {
+        current++;
+        current = current % backgrounds.length;
+        header.css('background-image', backgrounds[current]);
+      }
+      setInterval(nextBackground, 5000);
+
+      header.css('background-image', backgrounds[0]);
+    });
+  </script>
+
+</head>
+
+
+<body>
+  <div class="container-fluid" id="bodySite">
+    <!-- Navbar -->
+    <div class="row header-row">
+      <nav class="navbar col-12">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar_collapse">
+            <span class="icon-bar icon_bar"></span>
+            <span class="icon-bar icon_bar"></span>
+            <span class="icon-bar icon_bar"></span>
+          </button>
+          <!-- Brand/logo -->
+          <a class="navbar-brand" href="index.html" id="c_logo">
+            <img src="assets/images/logo_icon.png" id="logotipo" alt="Logotipo Eco-Real Tijolos">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar_collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="obras.html">Obras</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- Final Navbar -->
+
+    <section id="parallax-body" class="row">
+      <div id="firstPage" class="bg-parallax main_banner" data-type="background" data-speed="10">
+        <div class="parallax-body">
+          <div id="text_carousel">
+            <div id="title-home">
+              <h3>Bem vindo ao</h3>
+              <h1>ECO REAL TIJOLOS</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- index.css -->
+    <section class="row">
+      <div class="col-12" id="section1">
+        <div id="text-new">
+          <h1>Novidades</h1>
+          <p>Breve muitas novidades para vocês!</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="row">
+      <div class="parallax-container col-12 " id="section-parallax" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="assets/images/floresta-amazonica-papel.jpg" data-natural-width="1200" data-natural-height="800">
+        <div id="text-p-container-1">
+          <h1>Respeito ao Meio Ambiente: É isso que nos dá a perspectiva do amanhã!</h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="col-12 d-none d-sm-block" id="section2">
+        <div id="text-products-home">
+          <h1>Produtos</h1>
+          <p>Conheça nossos produtos</p>
+        </div>
+        <div id="box-products" class="col-12">
+          <ul id="list-products">
+            <li id="product01" onclick="sendProductPage()"><span>Tijolo modular ecológico</span></li>
+            <li id="product02" onclick="sendProductPage()"><span>Palha trançada ecológica</span></li>
+            <li id="product03" onclick="sendProductPage()"><span>Canaleta modular ecológica</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="col-12" id="section3">
+        <div id="text-new">
+          <h1>Contato</h1>
+          <p>Contato</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="row">
+      <div class="col-12" id="footer-div">
+        Rodapé
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="assets/js/parallax.min.js" type="text/javascript"></script>
+    <script src="assets/js/tether.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+      function handleClick(target) {
+        $(document).ready(function() {
+          $('html, body').animate({
+            scrollTop: target.offsetTop - 75
+          }, 1200);
+        });
+      }
+    </script>
+
+    <script type="text/javascript">
+      function sendProductPage() {
+          window.location.replace("file:///home/cleiber/Documentos/Develop/EcoReal1.1/produtos.html");
+        }
+    </script>
+  </div>
+</body>
+
+</html>

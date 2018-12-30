@@ -1,0 +1,99 @@
+::-webkit-scrollbar-track {
+  background-color: #ECF0F1;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background: #95A5A6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #95A5A6;
+  border-radius: 5px;
+}
+
+* {
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14pt;
+}
+
+/* cabeçalho da página */
+
+#c_logo {
+  padding: 2px;
+  width: 150px;
+}
+
+#logotipo {
+  width: 45px;
+  height: 45px;
+  padding-left: auto;
+  padding-right: auto;
+  position: relative;
+  left: 35px;
+}
+
+.header-row {
+  width: 100%;
+  height: 51.30px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+/* Navbar*/
+.navbar {
+  background-color: rgb(63, 88, 59);
+  height: auto;
+  text-transform: uppercase;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  display: block;
+  width: 220px;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  transition: 1s;
+  color: white;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.li-bar {
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  width: 220px;
+  padding-left: 20px;
+  text-align: center;
+  color: white;
+}
+
+.navbar a:hover {
+  cursor: pointer;
+  z-index: 1;
+}
+
+.icon_bar {
+  background-color: rgb(41, 42, 46);
+}
+
+/* Rodapé */
+#footer-div {
+  height: 150px;
+  width: 100%;
+  background-color: red;
+  display: block;
+  clear: both;
+  background-color: rgb(63, 88, 59);
+}
