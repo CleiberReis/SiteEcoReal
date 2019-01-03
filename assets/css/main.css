@@ -19,7 +19,6 @@
 }
 
 /* cabeçalho da página */
-
 #c_logo {
   padding: 2px;
   width: 150px;
@@ -114,6 +113,7 @@
   width: 100px;
   float: left;
 }
+
 #link-footer a {
   text-align: left;
   font-size: .8em;
@@ -129,4 +129,39 @@ iframe {
   border: 1px solid black;
   overflow: hidden;
   margin-left: 15%;
+}
+
+#text-footer-develop {
+  display: block;
+  float: right;
+  border: 2px solid black;
+  padding: 1% 1% 1% 1%;
+  margin-right: 50px;
+}
+
+#text-footer-develop:hover {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+#text-footer-develop h3 {
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
+}
+
+#text-footer-develop a {
+  color: white;
+  display: block;
+  float: left;
+  text-decoration: none;
+  padding: 1% 1% 2% 1%;
+}
+
+#text-footer-develop a:hover {
+  font-size: 15pt;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
+}
+
+.fab {
+
 }
