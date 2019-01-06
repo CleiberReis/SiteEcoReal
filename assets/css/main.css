@@ -43,7 +43,7 @@
 
 /* Navbar*/
 .navbar {
-  background-color: rgb(63, 88, 59);
+  background-color: rgb(0,0,0,0.1);
   height: auto;
   text-transform: uppercase;
   z-index: 1;
@@ -81,6 +81,7 @@
 .navbar a:hover {
   cursor: pointer;
   z-index: 1;
+  color: green;
 }
 
 .icon_bar {

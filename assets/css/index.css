@@ -101,23 +101,26 @@
 #text_carousel {
   top: 250px;
   height: 220px;
-  background-color: rgba(63, 88, 59, 0.65);
+  background-color: rgba(63, 88, 59, 0.55);
   float: center;
   position: relative;
 }
 
-#text_carousel h3 {
-  font: normal 50px poppinsregular;
+#text_carousel h2 {
+  font: normal;
+  font-size: 50px;
   color: #FFFFFF;
   margin: 0;
   text-shadow: 0 0 10px black;
   height: 105px;
   text-align: right;
   padding-right: 2%;
+  padding-top: 2%;
 }
 
 #text_carousel h1 {
-  font: normal 80px/61px poppinssemibold;
+  font: normal;
+  font-size: 70px ;
   color: #FFFFFF;
   margin: 0;
   text-shadow: 0 0 10px black;
