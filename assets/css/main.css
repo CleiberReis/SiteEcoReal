@@ -129,7 +129,8 @@
 iframe {
   border: 1px solid black;
   overflow: hidden;
-  margin-left: 15%;
+  margin-left: 35%;
+  float: center;
 }
 
 #text-footer-develop {
@@ -165,4 +166,20 @@ iframe {
 
 .fab {
 
+}
+
+#text-footer h1{
+  font-family: 'Questrial', sans-serif;
+  font-size: 1em;
+  padding-left: 2%;
+  text-align: left;
+  color: white;
+}
+
+#text-footer p{
+  font-family: 'Questrial', sans-serif;
+  font-size: 1em;
+  padding-left: 2%;
+  text-align: left;
+  color: white;
 }
