@@ -11,6 +11,9 @@
     width: 100%;
     text-align: justify;
     height: auto;
+    z-index: 1;
+    position: fixed;
+    top: 0;
   }
 
   li {
@@ -29,36 +32,6 @@
     background-color: blue;
   }
 
-  #firstPage {
-    width: 100%;
-    align-content: center;
-  }
-
-  #text_carousel {
-    background-color: rgba(63, 88, 59, 0.65);
-    max-width: 100%;
-    position: absolute;
-    top: 30%;
-    right: 50%;
-    -webkit-transform: translate(50%, -50%);
-    transform: translate(50%, -50%);
-  }
-
-  #text_carousel h3 {
-    display: none;
-  }
-
-  #text_carousel h1 {
-    font: 30px 'Ubuntu';
-    color: #FFFFFF;
-    margin: 0;
-    text-shadow: 0 0 10px black;
-    top: 30%;
-    right: -50%;
-    height: auto;
-    text-align: center;
-  }
-
   iframe {
     border: 1px solid black;
     overflow: hidden;
@@ -66,6 +39,29 @@
     width: 100%;
     height: 200px;
     transform: scale(.95);
+  }
+  #box-product-01 {
+    display: block;
+    float: left;
+    width: 80%;
+    height: auto;
+    border: 2px solid black;
+  }
+
+  #box-product-02 {
+    display: block;
+    float: left;
+    width: 80%;
+    height: auto;
+    border: 2px solid red;
+  }
+
+  #box-product-03 {
+    display: block;
+    float: left;
+    width: 80%;
+    height: auto;
+    border: 2px solid blue;
   }
 }
 

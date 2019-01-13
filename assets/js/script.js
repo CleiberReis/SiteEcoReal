@@ -35,3 +35,22 @@ function handleClick(target) {
     }, 1200);
   });
 }
+
+// Toggle descriptions
+$(document).ready(function(){
+  $("#btnDescription1").click(function(){
+    $("div#description1").toggle();
+  });
+});
+
+$(document).ready(function(){
+  $("#btnDescription2").click(function(){
+    $("div#description2").toggle();
+  });
+});
+
+$(document).ready(function(){
+  $("#btnDescription3").click(function(){
+    $("div#description3").toggle();
+  });
+});

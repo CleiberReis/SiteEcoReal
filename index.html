@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" id="bootstrap-css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" type="text/javascript"></script>
   <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
@@ -80,16 +81,47 @@
     </section>
 
     <section class="row">
-      <div class="col-12 d-none d-sm-block"  id="box-products">
+      <div class="col-12 d-none d-sm-block" id="section2">
         <div id="text-products-home">
           <h1>Principais Produtos</h1>
         </div>
-        <div class="col-12">
-          <ul id="list-products">
+        <!-- <ul id="list-products">
             <li id="product01"><span>Tijolo modular ecológico</span></li>
             <li id="product02"><span>Palha trançada ecológica</span></li>
             <li id="product03"><span>Canaleta modular ecológica</span></li>
-          </ul>
+          </ul> -->
+        <div class="" id="box-product-01">
+          <img src="assets/images/1.jpg" alt="" id="product-01" title="Tijolo modular ecológico">
+          <span>Tijolo modular ecológico</span>
+          <button id="btnDescription1" class="btn-primary">Descrição do produto</button>
+          <div id="description1" style="display: none">
+            <h1>Descrição do produto</h1>
+            <p>Aqui vai toda a Descrição do produto</p>
+          </div>
+        </div>
+        <div class="" id="box-product-02">
+          <img src="assets/images/2.jpg" alt="" id="product-02" title="Canaleta modular ecológica">
+          <span>Canaleta modular ecológica</span>
+          <button id="btnDescription2" class="btn-primary">Descrição do produto</button>
+          <div id="description2" style="display: none">
+            <h1>Descrição do produto</h1>
+            <p>Aqui vai toda a Descrição do produto</p>
+          </div>
+        </div>
+        <div class="" id="box-product-03">
+          <img src="assets/images/3.jpg" alt="" id="product-03" title="Palha trançada ecológica">
+          <span>Palha trançada ecológica</span>
+          <button id="btnDescription3" class="btn-primary">Descrição do produto</button>
+          <div id="description3" style="display: none">
+            <h1>Descrição do produto</h1>
+            <p>Aqui vai toda a Descrição do produto</p>
+            <p>OKASKOPAKSOKOASKOSA</p>
+            <p>OKASKOPAKSOKOASKOSA</p>
+            <p>OKASKOPAKSOKOASKOSA</p>
+            <p>OKASKOPAKSOKOASKOSA</p>
+            <p>OKASKOPAKSOKOASKOSA</p>
+            <p>OKASKOPAKSOKOASKOSA</p>
+          </div>
         </div>
       </div>
     </section>
@@ -117,6 +149,9 @@
         <div id="text-new">
           <h1>Contato</h1>
           <p>Contact</p>
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FECOREALTIJOLOS%2F&tabs=timeline&width=400&height=200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="400"
+            height="200" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media">
+          </iframe>
         </div>
       </div>
     </section>
@@ -128,16 +163,14 @@
       </div>
       <div class="col-6" id="links-footer">
         <ul class="footer">
-          <li><a onclick="handleClick(document.getElementById('section1'))">&Gt;  Home</a></li>
-          <li><a onclick="handleClick(document.getElementById('section2'))">&Gt;  Produtos</a></li>
-          <li><a onclick="handleClick(document.getElementById('section3'))">&Gt;  Obras</a></li>
-          <li><a onclick="handleClick(document.getElementById('section4'))">&Gt;  Sobre</a></li>
-          <li><a onclick="handleClick(document.getElementById('section5'))">&Gt;  Contato</a></li>
+          <li><a onclick="handleClick(document.getElementById('section1'))">&Gt; Home</a></li>
+          <li><a onclick="handleClick(document.getElementById('section2'))">&Gt; Produtos</a></li>
+          <li><a onclick="handleClick(document.getElementById('section3'))">&Gt; Obras</a></li>
+          <li><a onclick="handleClick(document.getElementById('section4'))">&Gt; Sobre</a></li>
+          <li><a onclick="handleClick(document.getElementById('section5'))">&Gt; Contato</a></li>
         </ul>
       </div>
-      <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FECOREALTIJOLOS%2F&tabs=timeline&width=400&height=200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="400"
-        height="200" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media">
-      </iframe>
+
 
       <div id="text-footer-develop">
         <h3>Desenvolvido por:</h3>
