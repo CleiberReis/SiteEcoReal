@@ -83,7 +83,6 @@
 }
 
 /* Parallax - home page end*/
-
 #text-new {
   padding-top: 15px;
   text-transform: uppercase;
@@ -130,6 +129,7 @@
 }
 
 /* Products list home */
+
 ul#list-products {
   width: 100%;
   margin: 0 auto;
@@ -138,8 +138,7 @@ ul#list-products {
   list-style: none;
   display: block;
   float: left;
-  border: 1px solid rgba(0, 0, 0, .5);
-  background-color: rgba(0, 2, 6, .1);
+  background-color: rgba(0, 0, 0, .1);
 }
 
 ul#list-products li {
@@ -148,10 +147,12 @@ ul#list-products li {
   width: 250px;
   height: 250px;
   margin: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
   text-align: left;
-  border: 1px solid black;
+  border: 1px solid grey;
   background-color: #ffffff;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, .6);
 }
 
 ul#list-products li span {
@@ -212,6 +213,12 @@ ul#list-products li#product03:hover {
 #box-products {
   width: 100%;
   height: 100%;
+  background-image: url(../images/bricks.jpeg);
+  background-position: center;
+  background-size: cover;
+  display: table;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 
 /* Products list home end */

@@ -108,24 +108,6 @@
   text-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
 }
 
-#link-footer {
-  display: block;
-  padding: 0% 0% 2% 5%;
-  width: 100px;
-  float: left;
-}
-
-#link-footer a {
-  text-align: left;
-  font-size: .8em;
-  text-transform: uppercase;
-}
-
-#link-footer a:hover {
-  color: white;
-  text-decoration: none;
-}
-
 iframe {
   border: 1px solid black;
   overflow: hidden;
@@ -161,21 +143,29 @@ iframe {
   font-size: 15pt;
   text-decoration: none;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
+  color: #2DAF41;
 }
 
 .fab {
 
 }
 
-#text-footer {
+#links-footer {
   display: block;
   float: left;
-  margin-left: 2%;
+  margin-top: 3%;
+  text-transform: uppercase;
 }
 
-#text-footer h1, p{
-  font-family: 'Questrial', sans-serif;
-  font-size: 1em;
-  padding-left: 1%;
+#links-footer a{
   color: white;
+  text-decoration: none;
+  padding: 1% 1% 2% 1%;
+  cursor: pointer;
+}
+
+#links-footer a:hover {
+  font-size: 15pt;
+  text-decoration: none;
+  color:#2DAF41;
 }
