@@ -164,6 +164,7 @@
   text-align: center;
   background-color: #1C1C1C;
   padding-bottom: 1%;
+
 }
 
 #footer-div01 h3 {
@@ -172,4 +173,11 @@
   text-transform: uppercase;
   text-shadow: 2px 2px 2px black;
   font-size: 18px;
+  margin-left: 5%;
+}
+
+.icon-footer{
+  margin-top: 2%;
+  margin-right: 2%;
+  float: right;
 }
