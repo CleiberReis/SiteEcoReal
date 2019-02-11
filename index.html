@@ -24,45 +24,6 @@
   <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
   <script src="assets/js/bootstrap.bundle.min.js" type="text/javascript"></script>
   <script type="text/javascript" src="assets/js/script.js"></script>
-  <script>
-    function openModal() {
-  document.getElementById('ModalProducts').style.display = "block";
-}
-
-function closeModal() {
-  document.getElementById('ModalProducts').style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("modal01");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = " block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
-
 </head>
 
 <body>
@@ -131,123 +92,9 @@ function showSlides(n) {
       <div class="col-12 d-none d-sm-block" id="section2">
         <div id="text-products-home">
           <h1>Principais Produtos</h1>
-
         </div>
-        <!-- <ul id="list-products">
-            <li id="product01"><span>Tijolo modular ecológico</span></li>
-            <li id="product02"><span>Palha trançada ecológica</span></li>
-            <li id="product03"><span>Canaleta modular ecológica</span></li>
-          </ul> -->
-        <!-- <div class="" id="box-product-01">
-          <img src="assets/images/1.jpg" alt="" id="product-01" title="Tijolo modular ecológico">
-          <span>Tijolo modular ecológico</span>
-          <button id="btnDescription1" class="btn-primary">Descrição do produto</button>
-          <div id="description1" style="display: none">
-            <h2>Descrição do produto</h2>
-            <p>Aqui vai toda a Descrição do produto</p>
-          </div>
-        </div>
-        <div class="" id="box-product-02">
-          <img src="assets/images/2.jpg" alt="" id="product-02" title="Canaleta modular ecológica">
-          <span>Canaleta modular ecológica</span>
-          <button id="btnDescription2" class="btn-primary">Descrição do produto</button>
-          <div id="description2" style="display: none">
-            <h2>Descrição do produto</h2>
-            <p>Aqui vai toda a Descrição do produto</p>
-          </div>
-        </div>
-        <div class="" id="box-product-03">
-          <img src="assets/images/3.jpg" alt="" id="product-03" title="Palha trançada ecológica">
-          <span>Palha trançada ecológica</span>
-          <button id="btnDescription3" class="btn-primary">Descrição do produto</button>
-          <div id="description3" style="display: none">
-            <h2>Descrição do produto</h2>
-            <p>Aqui vai toda a Descrição do produto</p>
 
-          </div>
-        </div>
-      </div> -->
-        <!--  <div class="container-fluid">
-
-          <div class="row">
-            <div class="column">
-              <img src="assets/images/1.jpg" style="width: 100%; height: 300px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" title="" alt="">
-              <div class="container-fluid container-description">
-                <span>Tijolo modular ecológico</span>
-                <button id="btnDescription1" class="btn-primary">Descrição do produto</button>
-                <div id="description1" style="display: none">
-                  <h2>Descrição do produto</h2>
-                  <p>Aqui vai toda a Descrição do produto</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="column">
-              <img src="assets/images/2.jpg" style="width: 100%; height: 300px" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" title="" alt="">
-              <div class="container-fluid container-description">
-                <span>Canaleta modular ecológica</span>
-                <button id="btnDescription2" class="btn-primary">Descrição do produto</button>
-                <div id="description2" style="display: none">
-                  <h2>Descrição do produto</h2>
-                  <p>Aqui vai toda a Descrição do produto</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="column">
-              <img src="assets/images/3.jpg" style="width: 100%; height: 300px" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" title="" alt="">
-              <div class="container-fluid container-description">
-                <span>Palha trançada ecológica</span>
-                <button id="btnDescription3" class="btn-primary">Descrição do produto</button>
-                <div id="description3" style="display: none">
-                  <h2>Descrição do produto</h2>
-                  <p>Aqui vai toda a Descrição do produto</p>
-                </div>
-              </div>
-            </div>
-
-            <div id="ModalProducts" class="modal">
-
-              <div class="modal-content">
-                <span class="close cursor" onclick="closeModal()">Fechar &times;</span>
-
-                <div class="mySlides">
-                  <div class="numbertext">1 / 3</div>
-                  <img src="assets/images/1.jpg" id="slide-img">
-                </div>
-
-                <div class="mySlides">
-                  <div class="numbertext">2 / 3</div>
-                  <img src="assets/images/2.jpg" id="slide-img">
-                </div>
-
-                <div class="mySlides">
-                  <div class="numbertext">3 / 3</div>
-                  <img src="assets/images/3.jpg" id="slide-img">
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                <div class="caption-container">
-                  <p id="caption"></p>
-                </div>
-
-                <div class="column" id="img-bottom">
-                  <img class="modal01 cursor" src="assets/images/1.jpg" id="slide-img-bottom" onclick="currentSlide(1)" alt="Tijolo modular ecológico">
-                </div>
-                <div class="column" id="img-bottom">
-                  <img class="modal01 cursor" src="assets/images/2.jpg" id="slide-img-bottom" onclick="currentSlide(2)" alt="Canaleta modular ecológica">
-                </div>
-                <div class="column" id="img-bottom">
-                  <img class="modal01 cursor" src="assets/images/3.jpg" id="slide-img-bottom" onclick="currentSlide(3)" alt="Palha trançada ecológica">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </section> -->
-        <div class="conteiner-fluid">
+        <div class="container-fluid">
           <section id="products">
             <section class="product">
               <img src="assets/images/1.jpg" alt="" id="product-01" title="Tijolo modular ecológico">
@@ -261,7 +108,8 @@ function showSlides(n) {
               <h2>Canaleta Modular Ecológica</h2>
               <p>As canaletas passam sobre as portas e janelas, no respaldo e na distribuição horizontal da rede elétrica e hidráulica.</p>
 
-              <p>Esse tipo de tijolo proporciona qualidade, solidez, beleza e, principalmente, ECONOMIA no custo total da obra. Além disso, canaliza o fluxo de ar de baixo para cima, proporcionando o conforto térmico e acústico e eliminando possível umidade.</p>
+              <p>Esse tipo de tijolo proporciona qualidade, solidez, beleza e, principalmente, ECONOMIA no custo total da obra. Além disso, canaliza o fluxo de ar de baixo para cima, proporcionando o conforto térmico e acústico e eliminando possível
+                umidade.</p>
             </section>
 
             <section class="product right">
@@ -273,80 +121,80 @@ function showSlides(n) {
             </section>
           </section>
         </div>
+      </div>
+    </section>
 
-        <section class="row">
-          <div class="col-12" id="section3">
-            <div id="text-new">
-              <h1>Obras</h1>
-              <p>Works</p>
-            </div>
+    <section class="row">
+      <div class="col-12" id="section3">
+        <div id="text-new">
+          <h1>Obras</h1>
+          <p>Works</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="col-12" id="section4">
+        <div id="text-new">
+          <h1>Quem somos</h1>
+          <p>who we are?</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="col-12" id="section5">
+        <div id="text-new">
+          <div class="back-contact">
+            <h1>Contato</h1>
+            <hr>
+            <h3>Endereço:</h3>
+            <p>Galpão G19 - Av. Carrolton, S/N - Cidade Industrial </p>
+            <p> Lorena - SP, 12609-170</p>
+            <h3>&phone; Entre em contato conosco: </h3>
+            <p>(12) 99234-0898</p>
+            <h3>&commat; E-mail: </h3>
+            <p>contato@ecorealtijolos.com.br </p>
           </div>
-        </section>
-
-        <section class="row">
-          <div class="col-12" id="section4">
-            <div id="text-new">
-              <h1>Quem somos</h1>
-              <p>who we are?</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="row">
-          <div class="col-12" id="section5">
-            <div id="text-new">
-              <div class="back-contact">
-              <h1>Contato</h1>
-              <hr>
-              <h3>Endereço:</h3>
-              <p>Galpão G19 - Av. Carrolton, S/N - Cidade Industrial </p>
-              <p> Lorena - SP, 12609-170</p>
-              <h3>&phone;  Entre em contato conosco: </h3>
-              <p>(12) 99234-0898</p>
-              <h3>&commat; E-mail: </h3>
-              <p>contato@ecorealtijolos.com.br </p>
-            </div>
-            <div class="iframe-contact">
-              <h1>Facebook: </h1>
-              <hr>
-              <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FECOREALTIJOLOS%2F&tabs=timeline&width=400&height=200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-                width="400" height="275" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media">
-              </iframe>
-            </div>
-            </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="row" id="footer-box">
-
-          <div class="col-6" id="links-footer">
-            <ul class="footer">
-              <li><a onclick="handleClick(document.getElementById('section1'))">Home</a></li>
-              <li><a onclick="handleClick(document.getElementById('section2'))"> Produtos</a></li>
-              <li><a onclick="handleClick(document.getElementById('section3'))"> Obras</a></li>
-              <li><a onclick="handleClick(document.getElementById('section4'))"> Sobre</a></li>
-              <li><a onclick="handleClick(document.getElementById('section5'))"> Contato</a></li>
-            </ul>
-          </div>
-          <hr>
-        <div id="text-footer-develop">
-            <h3>Desenvolvido por:</h3>
-            <ul>
-              <li><i class="fab fa-github"></i><a href="https://github.com/CleiberReis" target="_blank">  Cleiber Reis</a> & <a href="https://github.com/gabrielekiane" target="_blank">Gabriele Kiane</a></li>
-            </ul>
-            <div class="icon-footer">
-            <li><a href="https://www.facebook.com/ECOREALTIJOLOS/" target="_blank"><img class="social-img" src="assets/images/socialface.png" alt="Link para Facebook" /></a></li>
+          <div class="iframe-contact">
+            <h1>Facebook: </h1>
+            <hr>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FECOREALTIJOLOS%2F&tabs=timeline&width=400&height=200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+              width="400" height="275" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media">
+            </iframe>
           </div>
         </div>
-
-          <div class="col-12" id="footer-div01">
-            <h3>Eco Real Tijolos &copy; 2018 </h3>
-          </div>
-
-        </footer>
       </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="row" id="footer-box">
+    <div class="col-6" id="links-footer">
+      <ul class="footer">
+        <li><a onclick="handleClick(document.getElementById('section1'))">Home</a></li>
+        <li><a onclick="handleClick(document.getElementById('section2'))"> Produtos</a></li>
+        <li><a onclick="handleClick(document.getElementById('section3'))"> Obras</a></li>
+        <li><a onclick="handleClick(document.getElementById('section4'))"> Sobre</a></li>
+        <li><a onclick="handleClick(document.getElementById('section5'))"> Contato</a></li>
+      </ul>
+    </div>
+    <hr>
+    <div id="text-footer-develop">
+      <h3>Desenvolvido por:</h3>
+      <ul>
+        <li><i class="fab fa-github"></i><a href="https://github.com/CleiberReis" target="_blank"> Cleiber Reis</a> & <a href="https://github.com/gabrielekiane" target="_blank">Gabriele Kiane</a></li>
+      </ul>
+      <div class="icon-footer">
+        <li><a href="https://www.facebook.com/ECOREALTIJOLOS/" target="_blank"><img class="social-img" src="assets/images/socialface.png" alt="Link para Facebook" /></a></li>
+      </div>
+    </div>
+
+    <div class="col-12" id="footer-div01">
+      <h3>Eco Real Tijolos &copy; 2018 </h3>
+    </div>
+
+  </footer>
+  </div>
 </body>
 
 
