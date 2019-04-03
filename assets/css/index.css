@@ -1,23 +1,52 @@
 /* config tests */
 
 #box-layer-background{
-  background-color: red;
+  background-color: rgba(178, 255, 168, 0.3);
   width: 95%;
-  height: 400px;
+  height: 350px;
   clear: both;
   display: block;
 }
 
 #box-layer-1{
-  background-color: green;
   width: 200px;
   height: 200px;
   display: block;
   margin-top: 20px;
   float: left;
-
 }
 
+#box-layer-1 img{
+  height:60px;
+  width:70px;
+}
+
+#box-layer-2{
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin-top: 8%;
+  float: left;
+  margin-left: 10%;
+}
+
+#box-layer-3{
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin-top: 20px;
+  float: left;
+  margin-left: 15%;
+}
+
+#box-layer-4{
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin-top: 8%;
+  float: right;
+  margin-left: 10%;
+}
 
 /* config sections */
 #bodySite {
